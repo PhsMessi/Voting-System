@@ -1,6 +1,27 @@
-* {
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border: solid 1px black;
+}
+
+ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+} */
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -13,12 +34,10 @@ body {
 }
 
 .navbar {
-  width: 100%;
   display: flex;
+  padding: 1rem 3rem;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background: white;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -37,7 +56,7 @@ ul {
 .navbar a {
   color: #1a1a1a;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   transition: opacity 0.2s ease;
 }
 
@@ -59,13 +78,6 @@ section {
   border: 1px solid #e5e5e5;
   max-width: 400px;
   width: 100%;
-}
-
-h2 {
-  color: #1a1a1a;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
 }
 
 div {
@@ -103,24 +115,10 @@ button {
   font-weight: 500;
   cursor: pointer;
   transition: background 0.2s ease;
-  margin-bottom: 1rem;
 }
 
 button:hover {
   background: #333;
-}
-
-section a {
-  display: block;
-  text-align: center;
-  color: #1a1a1a;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: opacity 0.2s ease;
-}
-
-section a:hover {
-  opacity: 0.6;
 }
 
 @media (max-width: 480px) {
