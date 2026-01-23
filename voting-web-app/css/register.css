@@ -1,24 +1,3 @@
-/* * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-.navbar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  border: solid 1px black;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-} */
 * {
   padding: 0;
   margin: 0;
@@ -50,6 +29,8 @@ body {
 ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 2rem;
   list-style: none;
 }
 
@@ -69,12 +50,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 section {
   background: white;
-  padding: 3rem;
+  padding: 2.5rem;
   border: 1px solid #e5e5e5;
   max-width: 400px;
   width: 100%;
@@ -129,4 +110,9 @@ button:hover {
   .navbar {
     padding: 1rem 1.5rem;
   }
+}
+
+.input-header {
+  text-align: center;
+  margin-bottom: 1rem;
 }

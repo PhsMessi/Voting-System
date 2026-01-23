@@ -31,6 +31,8 @@ body {
 ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 2rem;
   list-style: none;
 }
 
@@ -65,7 +67,6 @@ h2 {
   color: #1a1a1a;
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 2rem;
 }
 
 div {
