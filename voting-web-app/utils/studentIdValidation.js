@@ -1,4 +1,4 @@
-export function validateFormat(str) {
+export function validateId(str) {
   // Check if str is a string
   if (typeof str !== "string") {
     return false;
