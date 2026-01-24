@@ -22,4 +22,4 @@ const database = () => {
   });
 };
 
-export { database };
+export { mysql, database };
