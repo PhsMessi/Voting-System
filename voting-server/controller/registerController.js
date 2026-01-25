@@ -54,7 +54,7 @@ export function loginStudent(req, res) {
         .json({ message: "Student ID and password are required" });
     }
 
-    const query = "SELECT * FROM studentvoter WHERE studentId = ?";
+    const query = "SELECT * FROM studentvoter WHERE studentId = ?"; //this has a potential sql injection
 
     mysql.query(query, [studentId], async (err, results) => {
       if (err) {
