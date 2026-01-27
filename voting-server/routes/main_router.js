@@ -5,10 +5,11 @@ import {
 } from "../controller/registerController.js";
 import { loginAdmin } from "../controller/adminController.js";
 import { authenticate, isAdmin, isStudent } from "../middleware/auth.js";
+import { api_key_auth } from "../middleware/api_key_auth.js";
 const router = express.Router();
 
 //register student
-router.post("/postStudent", registerStudent);
+router.post("/postStudent", api_key_auth, registerStudent);
 //student login
 router.post("/studentLogin", loginStudent);
 //admin login

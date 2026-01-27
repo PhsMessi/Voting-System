@@ -1,7 +1,6 @@
 // middleware/auth.js
 import jwt from "jsonwebtoken";
 
-// Verify if user is logged in (student or admin)
 export function authenticate(req, res, next) {
   try {
     // Get token from Authorization header or cookie

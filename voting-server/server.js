@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import cookieParser from "cookie-parser";
 import path from "path";
 import cors from "cors";
 import { fileURLToPath } from "url";
@@ -19,6 +20,7 @@ database();
 //my middlewares
 app.use(cors());
 app.use(express.json());
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 //api use
 app.use("/api", router);

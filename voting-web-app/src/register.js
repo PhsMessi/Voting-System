@@ -35,6 +35,8 @@ function initRegistration() {
   });
 }
 
+async function register(data) {}
+
 /*
 make a api call for register or post in the mysql (pending..)
 make a function that will redirect to the login window (pending..)
